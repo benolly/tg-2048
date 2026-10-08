@@ -1,0 +1,15 @@
+{
+  "name": "tg-2048",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Telegram-бот с мини-аппом 2048",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node serve.js",
+    "test": "node --test test/game.test.js test/bot.test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
