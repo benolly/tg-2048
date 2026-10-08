@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <title>2048</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <link rel="stylesheet" href="style.css?v=1">
+</head>
+<body>
+  <main class="app">
+    <header class="top">
+      <h1 class="title">2048</h1>
+      <div class="stats">
+        <div class="stat" id="score-box">
+          <span class="stat-label">Счёт</span>
+          <span class="stat-value" id="score">0</span>
+        </div>
+        <div class="stat">
+          <span class="stat-label">Рекорд</span>
+          <span class="stat-value" id="best">0</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="bar">
+      <p class="hint">Собери плитку 2048</p>
+      <button class="link" id="restart" type="button">Заново</button>
+    </div>
+
+    <section class="board" id="board" aria-label="Игровое поле">
+      <div class="layer" id="cells"></div>
+      <div class="layer" id="tiles"></div>
+      <div class="overlay" id="overlay" hidden>
+        <p class="overlay-title" id="overlay-title"></p>
+        <p class="overlay-text" id="overlay-text"></p>
+        <div class="overlay-actions" id="overlay-actions"></div>
+      </div>
+    </section>
+
+    <p class="foot">Свайпай, одинаковые плитки складываются</p>
+  </main>
+
+  <script src="game.js?v=1"></script>
+  <script src="app.js?v=1"></script>
+</body>
+</html>
